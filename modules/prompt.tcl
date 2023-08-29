@@ -8,17 +8,17 @@ proc ::prompt::get_icon {} {
   global argv0
   array set platforms {
     unknown ?
+    docker 
     android 
     arch 
-    centos 
-    debian 
-    docker 
-    gentoo 
     linux 
     macos 
-    ubuntu 
-    nixos 
     windows 
+    centos 
+    debian 
+    ubuntu 
+    gentoo 
+    nixos 
   }
   catch {set init [exec ps -p1 -ocmd=]}
   if {$init == {/sbin/docker-init}} {

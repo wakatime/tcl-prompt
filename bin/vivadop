@@ -1,0 +1,5 @@
+#!/usr/bin/env expect
+spawn vivado -mode tcl -journal /tmp/vivado.jou -log /tmp/vivado.log {*}$argv
+expect Vivado%
+send "source ~/.tclshrc\n"
+interact

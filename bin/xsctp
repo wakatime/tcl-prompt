@@ -1,0 +1,5 @@
+#!/usr/bin/env expect
+spawn xsct {*}$argv
+expect xsct%
+send "source ~/.tclshrc\n"
+interact
