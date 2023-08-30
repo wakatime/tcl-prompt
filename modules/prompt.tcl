@@ -128,9 +128,10 @@ proc ::prompt::get_ps1 {args} {
     }
     set text [format $format $text]
     if {[llength $last_bg] > 0} {
-      set ps1 "$ps1[::prompt::tput setaf $last_bg setab $bg]$sep"
+      set ps1 "$ps1[::prompt::tput setaf $last_bg setab $bg]$sep[::prompt::tput setaf $fg]$text"
+    } else {
+      set ps1 "$ps1[::prompt::tput setaf $fg setab $bg]$text"
     }
-    set ps1 "$ps1[::prompt::tput setaf $fg setab $bg]$text"
     set last_bg $bg;
   }
   set ps1 "$ps1[::prompt::tput reset setaf $last_bg]$sep[::prompt::tput reset]$prompt_string"
