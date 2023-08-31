@@ -1,5 +1,9 @@
 #!/usr/bin/env expect
+# vivado -mode tcl -source ~/.tclshrc
+# will result in
+# Abnormal program termination (11)
+# and change $argv0 to ~/.tclshrc
 spawn vivado -mode tcl -journal /tmp/vivado.jou -log /tmp/vivado.log {*}$argv
 expect Vivado%
-send "source ~/.tclshrc\n"
+send "source -notrace ~/.tclshrc\n"
 interact

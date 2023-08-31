@@ -1,4 +1,7 @@
 #!/usr/bin/env expect
+# xsct -eval 'source ~/.tclshrc' -interactive
+# will result in
+# /opt/Xilinx/Vitis/2023.1/bin/rdiArgs.sh: line 352: 336561 Segmentation fault      (core dumped) "$RDI_PROG" "$@"
 spawn xsct {*}$argv
 expect xsct%
 send "source ~/.tclshrc\n"
