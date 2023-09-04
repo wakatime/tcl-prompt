@@ -27,7 +27,11 @@
 [![github/v](https://shields.io/github/v/release/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt)
 
 A [powerlevel10k](https://github.com/romkatv/powerlevel10k)-like prompt for
-[tcl](https://www.tcl.tk).
+[tcl](https://www.tcl.tk). Include REPLs for:
+
+- [`expect`](https://expect.sourceforge.net)
+- [`vivado -mode tcl`](https://docs.xilinx.com/r/en-US/ug835-vivado-tcl-commands)
+- [`xsct`](https://docs.xilinx.com/r/en-US/ug1400-vitis-embedded)
 
 ![tclsh](https://github.com/Freed-Wu/Freed-Wu/assets/32936898/d410608b-6ddf-4c1b-a72e-9d6f6b1f48a4)
 
