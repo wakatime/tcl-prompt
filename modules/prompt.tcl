@@ -4,6 +4,11 @@ namespace eval ::prompt {}
 package require tclreadline
 package require term::ansi::code::attr
 
+# for expectp
+if {![info exists argv0]} {
+  set argv0 {}
+}
+
 proc ::prompt::get_icon {} {
   global argv0
   array set platforms {
