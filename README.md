@@ -37,9 +37,11 @@ A [powerlevel10k](https://github.com/romkatv/powerlevel10k)-like prompt for
 
 ![wish](https://github.com/Freed-Wu/Freed-Wu/assets/32936898/a8a2304b-cc63-4597-befe-9e04fc453179)
 
-![vivado](https://github.com/Freed-Wu/Freed-Wu/assets/32936898/37a9488b-8ea5-407d-9d3a-0f15de24abad)
+![expectp](https://github.com/Freed-Wu/tcl-prompt/assets/32936898/5ceddf38-6b59-45b1-8046-a64286f27189)
 
-![xsct](https://github.com/Freed-Wu/Freed-Wu/assets/32936898/bcec3659-ebdf-4c3b-aefa-193020db4146)
+![vivadop](https://github.com/Freed-Wu/tcl-prompt/assets/32936898/de90a851-8d62-4e42-a4bd-e8ec402599eb)
+
+![xsctp](https://github.com/Freed-Wu/tcl-prompt/assets/32936898/eed76559-7aee-4854-a94b-5dd9c3782d87)
 
 ## Dependencies
 
