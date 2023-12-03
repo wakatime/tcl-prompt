@@ -111,7 +111,6 @@ proc ::prompt::tput {args} {
 
 proc ::prompt::get_ps1 {args} {
   if {[llength $args] == 0} {
-    lappend args {black white ::prompt::wakatime}
     lappend args [list black white $::prompt::icon]
     lappend args [list black yellow $::prompt::version]
     lappend args {black white ::prompt::get_time}
@@ -158,5 +157,6 @@ proc ::prompt::get_ps1 {args} {
 }
 
 proc ::tclreadline::prompt1 {} {
+  ::prompt::wakatime
   return [::prompt::get_ps1]
 }
