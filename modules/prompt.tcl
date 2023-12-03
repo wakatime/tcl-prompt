@@ -14,9 +14,9 @@ set ::prompt::wakatime_cmd {exec wakatime-cli --write --plugin=repl-tcl-wakatime
 proc ::prompt::wakatime {} {
   set cmd [set ::prompt::wakatime_cmd]
   if {[string match *%s* $cmd]} {
-    string replace $cwd 0 %s [file tail [pwd]]
+    set cmd [format $cmd [file tail [pwd]]]
   }
-  eval $cwd
+  eval $cmd
 }
 
 proc ::prompt::get_icon {} {
