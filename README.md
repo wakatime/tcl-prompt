@@ -110,3 +110,23 @@ proc ::tclreadline::prompt1 {} {
   return [::prompt::get_ps1 ...]
 }
 ```
+
+If you just want to statistic time for wakatime and don't want to customize
+your prompt string. Just call `::prompt::wakatime` in `::tclreadline::prompt1`:
+
+```tcl
+proc ::tclreadline::prompt1 {} {
+  ::prompt::wakatime
+  return {$}
+  # or other simple prompt string
+}
+```
+
+By default, It uses the base name of current working directory as your project name.
+You can remove `--project=%s` from `::prompt::wakatime_cmd` to disable it.
+
+<!-- markdownlint-disable MD013 -->
+
+```tcl
+set ::prompt::wakatime_cmd {exec wakatime-cli --write --plugin=repl-tcl-wakatime --entity-type=app --entity=tcl --alternate-language=tcl --project=%s}
+```
