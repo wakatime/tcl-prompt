@@ -9,6 +9,16 @@ if {![info exists argv0]} {
   set argv0 {}
 }
 
+set ::prompt::wakatime_cmd {exec wakatime-cli --write --plugin=repl-tcl-wakatime --entity-type=app --entity=tcl --alternate-language=tcl --project=%s}
+
+proc ::prompt::wakatime {} {
+  set cmd [set ::prompt::wakatime_cmd]
+  if {[string match *%s* $cmd]} {
+    string replace $cwd 0 %s [file tail [pwd]]
+  }
+  eval $cwd
+}
+
 proc ::prompt::get_icon {} {
   global argv0
   array set platforms {
@@ -101,6 +111,7 @@ proc ::prompt::tput {args} {
 
 proc ::prompt::get_ps1 {args} {
   if {[llength $args] == 0} {
+    lappend args {black white ::prompt::wakatime}
     lappend args [list black white $::prompt::icon]
     lappend args [list black yellow $::prompt::version]
     lappend args {black white ::prompt::get_time}
@@ -130,6 +141,9 @@ proc ::prompt::get_ps1 {args} {
     set text [lindex $value 2]
     if {[llength [info command $text]] > 0} {
       set text [eval $text]
+    }
+    if {[string length $text] == 0} {
+      continue
     }
     set text [format $format $text]
     if {[llength $last_bg] > 0} {

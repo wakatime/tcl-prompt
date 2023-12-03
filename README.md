@@ -26,16 +26,27 @@
 [![github/repo-size](https://shields.io/github/repo-size/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt)
 [![github/v](https://shields.io/github/v/release/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt)
 
-A [powerlevel10k](https://github.com/romkatv/powerlevel10k)-like prompt for
-[tcl](https://www.tcl.tk). Include REPLs for:
+This project provides:
 
-- [`expect`](https://expect.sourceforge.net)
-- [`vivado -mode tcl`](https://docs.xilinx.com/r/en-US/ug835-vivado-tcl-commands)
-- [`xsct`](https://docs.xilinx.com/r/en-US/ug1400-vitis-embedded)
+- A [powerlevel10k](https://github.com/romkatv/powerlevel10k)-like prompt for
+  [tcl](https://www.tcl.tk)s REPL `tclsh` and [tk](https://www.tcl.tk/)'s REPL
+  `wish`.
+- A [wakatime](https://wakatime.com/) plugin to statistics how much time you
+  write tcl in REPL.
 
 ![tclsh](https://github.com/Freed-Wu/Freed-Wu/assets/32936898/d410608b-6ddf-4c1b-a72e-9d6f6b1f48a4)
 
 ![wish](https://github.com/Freed-Wu/Freed-Wu/assets/32936898/a8a2304b-cc63-4597-befe-9e04fc453179)
+
+Besides tcl's REPL `tclsh`, there are many programs written in tcl which
+provide their REPLs. This project provides some wrapper scripts to use this
+plugin for them:
+
+- [`expect`](https://expect.sourceforge.net)
+- [vivado](https://www.xilinx.com/products/design-tools/vivado.html)'s
+  [`vivado -mode tcl`](https://docs.xilinx.com/r/en-US/ug835-vivado-tcl-commands)
+- [vitis](https://www.xilinx.com/products/design-tools/vitis.html)'s
+  [`xsct`](https://docs.xilinx.com/r/en-US/ug1400-vitis-embedded)
 
 ![expectp](https://github.com/Freed-Wu/tcl-prompt/assets/32936898/5ceddf38-6b59-45b1-8046-a64286f27189)
 
@@ -45,15 +56,18 @@ A [powerlevel10k](https://github.com/romkatv/powerlevel10k)-like prompt for
 
 ## Dependencies
 
-- [tclreadline](https://github.com/flightaware/tclreadline)
-- [tcllib](https://core.tcl-lang.org/tcllib)
+- [tclreadline](https://github.com/flightaware/tclreadline): Provide a function
+  `::tclreadline::prompt1`. Every read-eval-print-loop the function will be
+  called and it's result will be used as prompt string.
+- [tcllib](https://core.tcl-lang.org/tcllib): Provide some functions and
+  variables about ANSI colors.
 
 ## Install
 
 ### [AUR](https://aur.archlinux.org/packages/tcl-prompt)
 
 ```sh
-yay -S tcl-prompt
+paru -S tcl-prompt-git
 ```
 
 ### [NUR](https://nur.nix-community.org/repos/freed-wu)
@@ -73,6 +87,22 @@ package require prompt
 ```
 
 ## Customize
+
+You can redefined `::tclreadline::prompt1`. This project provides a function
+`::prompt::get_ps1` to generate prompt string.
+
+- `str` is last string, such as `>`, `$`.
+- `format` can be `%s` to add padding white spaces
+- `sep` separate every section of prompt string.
+- `text_or_function` can be a text or function. Such as:
+  - `::prompt::wakatime`: statistic time. Output nothing. Ignore `fg_color` and
+    `bg_color`.
+  - `::prompt::get_icon`: output OS icon.
+  - `::prompt::icon`: OS icon.
+  - `::prompt::get_version`: output tcl version.
+  - `::prompt::version`: tcl version.
+  - `::prompt::get_cwd`: output current working directory. Use `~` to replace `$HOME`.
+  - `::prompt::get_time`: output current time.
 
 ```tcl
 # ::prompt::get_ps1 [str] [[format] {fg_color bg_color text_or_function} [sep]] ...
