@@ -131,5 +131,5 @@ use the base name of current working directory.
 <!-- markdownlint-disable MD013 -->
 
 ```tcl
-set ::prompt::wakatime_cmd {exec wakatime-cli --write --plugin=repl-tcl-wakatime --entity-type=app --entity=tcl --alternate-language=tcl --project=%s}
+set ::prompt::wakatime_cmd {exec wakatime-cli --write --plugin=repl-tcl-wakatime --entity-type=app --entity=tcl --alternate-language=tcl --project=%s &}
 ```
