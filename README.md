@@ -31,12 +31,15 @@ This project provides:
 - A [powerlevel10k](https://github.com/romkatv/powerlevel10k)-like prompt for
   [tcl](https://www.tcl.tk)s REPL `tclsh` and [tk](https://www.tcl.tk/)'s REPL
   `wish`.
-- A [wakatime](https://wakatime.com/) plugin to statistics how much time you
-  write tcl in REPL.
 
 ![tclsh](https://github.com/wakatime/wakatime/assets/32936898/d410608b-6ddf-4c1b-a72e-9d6f6b1f48a4)
 
 ![wish](https://github.com/wakatime/wakatime/assets/32936898/a8a2304b-cc63-4597-befe-9e04fc453179)
+
+- A [wakatime](https://wakatime.com/) plugin to statistics how much time you
+  write tcl in REPL.
+
+![wakatime](https://github.com/wakatime/tcl-prompt/assets/32936898/42f33e8d-51ef-4225-b6a0-6f7cade60e9b)
 
 Besides tcl's `tclsh` and tk's `wish`, there are many programs written in tcl
 which provide their REPLs. This project provides some wrapper scripts to use
