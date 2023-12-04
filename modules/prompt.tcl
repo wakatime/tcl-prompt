@@ -9,7 +9,7 @@ if {![info exists argv0]} {
   set argv0 {}
 }
 
-set ::prompt::wakatime_cmd {exec wakatime-cli --write --plugin=repl-tcl-wakatime --entity-type=app --entity=tcl --alternate-language=tcl --project=%s}
+set ::prompt::wakatime_cmd {exec wakatime-cli --write --plugin=repl-tcl-wakatime --entity-type=app --entity=tcl --alternate-language=tcl --project=%s &}
 
 proc ::prompt::wakatime {} {
   set cmd [set ::prompt::wakatime_cmd]
