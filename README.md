@@ -125,6 +125,9 @@ proc ::tclreadline::prompt1 {} {
 By default, It uses the base name of current working directory as your project name.
 You can remove `--project=%s` from `::prompt::wakatime_cmd` to disable it.
 
+If there is a git repository, the project name can be achieved by `git`. Else
+use the base name of current working directory.
+
 <!-- markdownlint-disable MD013 -->
 
 ```tcl

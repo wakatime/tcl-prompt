@@ -14,7 +14,10 @@ set ::prompt::wakatime_cmd {exec wakatime-cli --write --plugin=repl-tcl-wakatime
 proc ::prompt::wakatime {} {
   set cmd [set ::prompt::wakatime_cmd]
   if {[string match *%s* $cmd]} {
-    set cmd [format $cmd [file tail [pwd]]]
+    if {[catch {exec git rev-parse --show-toplevel 2> /dev/null} result] == 1} {
+      set result [file tail [pwd]]
+    }
+    set cmd [format $cmd $result]
   }
   eval $cmd
 }
