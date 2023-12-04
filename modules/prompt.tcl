@@ -15,9 +15,9 @@ proc ::prompt::wakatime {} {
   set cmd [set ::prompt::wakatime_cmd]
   if {[string match *%s* $cmd]} {
     if {[catch {exec git rev-parse --show-toplevel 2> /dev/null} result] == 1} {
-      set result [file tail [pwd]]
+      set result [pwd]
     }
-    set cmd [format $cmd $result]
+    set cmd [format $cmd [file tail $result]]
   }
   eval $cmd
 }
