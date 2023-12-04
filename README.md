@@ -38,9 +38,9 @@ This project provides:
 
 ![wish](https://github.com/wakatime/wakatime/assets/32936898/a8a2304b-cc63-4597-befe-9e04fc453179)
 
-Besides tcl's REPL `tclsh`, there are many programs written in tcl which
-provide their REPLs. This project provides some wrapper scripts to use this
-plugin for them:
+Besides tcl's `tclsh` and tk's `wish`, there are many programs written in tcl
+which provide their REPLs. This project provides some wrapper scripts to use
+this plugin for them:
 
 - [`expect`](https://expect.sourceforge.net)
 - [vivado](https://www.xilinx.com/products/design-tools/vivado.html)'s
