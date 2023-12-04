@@ -32,9 +32,9 @@ This project provides:
   [tcl](https://www.tcl.tk)s REPL `tclsh` and [tk](https://www.tcl.tk/)'s REPL
   `wish`.
 
-![tclsh](https://github.com/wakatime/wakatime/assets/32936898/d410608b-6ddf-4c1b-a72e-9d6f6b1f48a4)
+![tclsh](https://github.com/wakatime/tcl-prompt/assets/32936898/ff7a8030-2e8b-4f68-8304-1f3a6eda22f0)
 
-![wish](https://github.com/wakatime/wakatime/assets/32936898/a8a2304b-cc63-4597-befe-9e04fc453179)
+![wish](https://github.com/wakatime/tcl-prompt/assets/32936898/627e2dbb-4d12-44a0-a1f9-e3563168a752)
 
 - A [wakatime](https://wakatime.com/) plugin to statistics how much time you
   write tcl in REPL.
