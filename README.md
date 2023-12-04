@@ -1,30 +1,30 @@
 # tcl-prompt
 
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/Freed-Wu/tcl-prompt/main.svg)](https://results.pre-commit.ci/latest/github/Freed-Wu/tcl-prompt/main)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/wakatime/tcl-prompt/main.svg)](https://results.pre-commit.ci/latest/github/wakatime/tcl-prompt/main)
 
-[![github/downloads](https://shields.io/github/downloads/Freed-Wu/tcl-prompt/total)](https://github.com/Freed-Wu/tcl-prompt/releases)
-[![github/downloads/latest](https://shields.io/github/downloads/Freed-Wu/tcl-prompt/latest/total)](https://github.com/Freed-Wu/tcl-prompt/releases/latest)
-[![github/issues](https://shields.io/github/issues/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt/issues)
-[![github/issues-closed](https://shields.io/github/issues-closed/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt/issues?q=is%3Aissue+is%3Aclosed)
-[![github/issues-pr](https://shields.io/github/issues-pr/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt/pulls)
-[![github/issues-pr-closed](https://shields.io/github/issues-pr-closed/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt/pulls?q=is%3Apr+is%3Aclosed)
-[![github/discussions](https://shields.io/github/discussions/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt/discussions)
-[![github/milestones](https://shields.io/github/milestones/all/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt/milestones)
-[![github/forks](https://shields.io/github/forks/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt/network/members)
-[![github/stars](https://shields.io/github/stars/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt/stargazers)
-[![github/watchers](https://shields.io/github/watchers/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt/watchers)
-[![github/contributors](https://shields.io/github/contributors/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt/graphs/contributors)
-[![github/commit-activity](https://shields.io/github/commit-activity/w/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt/graphs/commit-activity)
-[![github/last-commit](https://shields.io/github/last-commit/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt/commits)
-[![github/release-date](https://shields.io/github/release-date/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt/releases/latest)
+[![github/downloads](https://shields.io/github/downloads/wakatime/tcl-prompt/total)](https://github.com/wakatime/tcl-prompt/releases)
+[![github/downloads/latest](https://shields.io/github/downloads/wakatime/tcl-prompt/latest/total)](https://github.com/wakatime/tcl-prompt/releases/latest)
+[![github/issues](https://shields.io/github/issues/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt/issues)
+[![github/issues-closed](https://shields.io/github/issues-closed/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt/issues?q=is%3Aissue+is%3Aclosed)
+[![github/issues-pr](https://shields.io/github/issues-pr/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt/pulls)
+[![github/issues-pr-closed](https://shields.io/github/issues-pr-closed/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt/pulls?q=is%3Apr+is%3Aclosed)
+[![github/discussions](https://shields.io/github/discussions/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt/discussions)
+[![github/milestones](https://shields.io/github/milestones/all/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt/milestones)
+[![github/forks](https://shields.io/github/forks/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt/network/members)
+[![github/stars](https://shields.io/github/stars/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt/stargazers)
+[![github/watchers](https://shields.io/github/watchers/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt/watchers)
+[![github/contributors](https://shields.io/github/contributors/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt/graphs/contributors)
+[![github/commit-activity](https://shields.io/github/commit-activity/w/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt/graphs/commit-activity)
+[![github/last-commit](https://shields.io/github/last-commit/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt/commits)
+[![github/release-date](https://shields.io/github/release-date/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt/releases/latest)
 
-[![github/license](https://shields.io/github/license/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt/blob/main/LICENSE)
-[![github/languages](https://shields.io/github/languages/count/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt)
-[![github/languages/top](https://shields.io/github/languages/top/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt)
-[![github/directory-file-count](https://shields.io/github/directory-file-count/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt)
-[![github/code-size](https://shields.io/github/languages/code-size/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt)
-[![github/repo-size](https://shields.io/github/repo-size/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt)
-[![github/v](https://shields.io/github/v/release/Freed-Wu/tcl-prompt)](https://github.com/Freed-Wu/tcl-prompt)
+[![github/license](https://shields.io/github/license/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt/blob/main/LICENSE)
+[![github/languages](https://shields.io/github/languages/count/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt)
+[![github/languages/top](https://shields.io/github/languages/top/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt)
+[![github/directory-file-count](https://shields.io/github/directory-file-count/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt)
+[![github/code-size](https://shields.io/github/languages/code-size/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt)
+[![github/repo-size](https://shields.io/github/repo-size/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt)
+[![github/v](https://shields.io/github/v/release/wakatime/tcl-prompt)](https://github.com/wakatime/tcl-prompt)
 
 This project provides:
 
@@ -34,9 +34,9 @@ This project provides:
 - A [wakatime](https://wakatime.com/) plugin to statistics how much time you
   write tcl in REPL.
 
-![tclsh](https://github.com/Freed-Wu/Freed-Wu/assets/32936898/d410608b-6ddf-4c1b-a72e-9d6f6b1f48a4)
+![tclsh](https://github.com/wakatime/wakatime/assets/32936898/d410608b-6ddf-4c1b-a72e-9d6f6b1f48a4)
 
-![wish](https://github.com/Freed-Wu/Freed-Wu/assets/32936898/a8a2304b-cc63-4597-befe-9e04fc453179)
+![wish](https://github.com/wakatime/wakatime/assets/32936898/a8a2304b-cc63-4597-befe-9e04fc453179)
 
 Besides tcl's REPL `tclsh`, there are many programs written in tcl which
 provide their REPLs. This project provides some wrapper scripts to use this
@@ -48,11 +48,11 @@ plugin for them:
 - [vitis](https://www.xilinx.com/products/design-tools/vitis.html)'s
   [`xsct`](https://docs.xilinx.com/r/en-US/ug1400-vitis-embedded)
 
-![expectp](https://github.com/Freed-Wu/tcl-prompt/assets/32936898/5ceddf38-6b59-45b1-8046-a64286f27189)
+![expectp](https://github.com/wakatime/tcl-prompt/assets/32936898/5ceddf38-6b59-45b1-8046-a64286f27189)
 
-![vivadop](https://github.com/Freed-Wu/tcl-prompt/assets/32936898/de90a851-8d62-4e42-a4bd-e8ec402599eb)
+![vivadop](https://github.com/wakatime/tcl-prompt/assets/32936898/de90a851-8d62-4e42-a4bd-e8ec402599eb)
 
-![xsctp](https://github.com/Freed-Wu/tcl-prompt/assets/32936898/eed76559-7aee-4854-a94b-5dd9c3782d87)
+![xsctp](https://github.com/wakatime/tcl-prompt/assets/32936898/eed76559-7aee-4854-a94b-5dd9c3782d87)
 
 ## Dependencies
 
@@ -73,7 +73,7 @@ paru -S tcl-prompt-git
 ### [NUR](https://nur.nix-community.org/repos/freed-wu)
 
 ```sh
-nix-env -iA nixos.nur.repos.Freed-Wu.tcl-prompt
+nix-env -iA nixos.nur.repos.wakatime.tcl-prompt
 ```
 
 ## Usage
