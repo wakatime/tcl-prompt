@@ -1,6 +1,7 @@
 package provide prompt 0.0.1
 namespace eval ::prompt {}
 
+package require Thread
 package require tclreadline
 package require term::ansi::code::attr
 
@@ -11,12 +12,19 @@ if {![info exists argv0]} {
 
 set ::prompt::wakatime_cmd {exec wakatime-cli --write --plugin=repl-tcl-wakatime --entity-type=app --entity=tcl --alternate-language=tcl --project=%s}
 
+proc ::prompt::get_wakatime_cmd {} {
+    set cmd [set ::prompt::wakatime_cmd]
+    if {[string match *%s* $cmd]} {
+      set cmd [format $cmd [file tail [pwd]]]
+    }
+    return $cmd
+}
+
+set thread_id [thread::create {thread::wait}]
+
 proc ::prompt::wakatime {} {
-  set cmd [set ::prompt::wakatime_cmd]
-  if {[string match *%s* $cmd]} {
-    set cmd [format $cmd [file tail [pwd]]]
-  }
-  eval $cmd
+  global thread_id
+  thread::send -async $thread_id [::prompt::get_wakatime_cmd]
 }
 
 proc ::prompt::get_icon {} {
